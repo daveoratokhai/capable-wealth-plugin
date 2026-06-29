@@ -72,10 +72,13 @@ Every file follows the Standard Draft File Format (recipe §12):
 
 ## Step 5 — Run the gates (delegate to the other skills)
 
-For each piece, apply the logic of:
+Apply these to the produced content before finalizing:
 1. **image-brief** — generate the 9-point AI image prompt(s) for every asset, with batch-wide rotation awareness.
-2. **linkedin-check** — run the Section 6 checklist on each LinkedIn post; fix any failure before finalizing.
-3. **validate** — run content-integrity + date-alignment + relevance on every piece; only `Green` (or justified `Yellow`) proceeds. Record the result in each file's Quality Checklist.
+2. **linkedin-check** — run the 17-item checklist on each LinkedIn text post; fix any failure before finalizing.
+3. **voice-check** — run on **EVERY produced piece**: the blog, the podcast, all 3 LinkedIn posts, all 5 Facebook posts, every clip, the native video, and the carousel. This is the brand-wide voice gate and it runs across all content exactly as `linkedin-check` runs across the LinkedIn posts. It must catch **em dashes** (`—`) and the **"not X, but Y" / "it's not X, it's Y"** pivots in any piece, plus the three voice gates. Fix every flagged line before finalizing.
+4. **validate** — run content-integrity + date-alignment + relevance on every piece; only `Green` (or justified `Yellow`) proceeds. Record the result in each file's Quality Checklist.
+
+**Check the literal text, not your memory.** Before finalizing each file, actually search its body for the em-dash character `—` and for `not … but` / `not … it's` pivots — any hit is a defect to fix, not to wave through. The Quality Checklist you write must reflect this real re-derivation: never mark "No em dashes: PASS" on a body that still contains one.
 
 If you have the Agent tool available, you may fan these out in parallel (one agent per piece) for speed. Otherwise run them inline.
 
